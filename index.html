@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TKS Exim Global - Premium Egg Exports</title>
+    <meta name="description" content="Powering Global Egg Supply With Scale, Quality & Reliability. Premium White Shell Table Eggs sourced from India." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                400: '#FACC15', // Yellow-400
+                500: '#EAB308', // Yellow-500 (Gold)
+                600: '#CA8A04', // Yellow-600
+                700: '#A16207', // Yellow-700
+              },
+              dark: {
+                950: '#050505', // Almost pure black
+                900: '#0a0a0a', // Very dark gray
+                800: '#171717', 
+                700: '#262626',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              display: ['Syne', 'sans-serif'],
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #262626 1px, transparent 1px), linear-gradient(to bottom, #262626 1px, transparent 1px)",
+            },
+            animation: {
+              'pulse-gold': 'pulse-gold 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'marquee': 'marquee 20s linear infinite',
+              'glow-subtle': 'glow-subtle 3s ease-in-out infinite',
+              'slide-bar': 'slide-bar 2.5s ease-in-out infinite',
+            },
+            keyframes: {
+              'pulse-gold': {
+                '0%, 100%': { 
+                  transform: 'scale(1)', 
+                  filter: 'drop-shadow(0 0 0px rgba(250, 204, 21, 0))' 
+                },
+                '50%': { 
+                  transform: 'scale(1.1)', 
+                  filter: 'drop-shadow(0 0 10px rgba(250, 204, 21, 0.6))' 
+                },
+              },
+              'marquee': {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              'glow-subtle': {
+                '0%, 100%': { 
+                  filter: 'drop-shadow(0 0 5px rgba(234, 179, 8, 0.2))',
+                  transform: 'scale(1)'
+                },
+                '50%': { 
+                  filter: 'drop-shadow(0 0 25px rgba(234, 179, 8, 0.6))',
+                  transform: 'scale(1.05)'
+                },
+              },
+              'slide-bar': {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(200%)' },
+              }
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6, .font-display {
+        font-family: 'Syne', sans-serif;
+      }
+      .bg-grid {
+        background-size: 40px 40px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-black text-slate-200 antialiased selection:bg-primary-500 selection:text-black">
+    <div id="root"></div>
+  </body>
+</html>
